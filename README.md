@@ -5,3 +5,4 @@ Nombre del estudiante:
 Id.:
 ---
 
+# 1. Visualizando cada etapa
