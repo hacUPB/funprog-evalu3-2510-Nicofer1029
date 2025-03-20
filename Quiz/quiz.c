@@ -19,7 +19,7 @@ int main() {
             printf("No hay suficientes productos disponibles. Stock actual: %d\n", stock);
         } else {
             stock_restante = stock - cantidad;
-            stock = stock_restante;
+            stock = stock_restante; // Puse las variables al reves
             printf("Compra realizada. Stock restante: %d\n", stock_restante);
         }
     } while (stock > 0);
