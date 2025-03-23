@@ -16,7 +16,7 @@ int main() {
         }
 
         if (cantidad > stock) { // Me falto evaluar si hay stock o no antes de descontar la cantidad de compras del usuario del stock.
-            printf("No hay suficientes productos disponibles. Stock actual: %d\n", stock);
+            printf("No hay suficientes productos disponibles. Stock actual: %d \n", stock);
         } else {
             stock_restante = stock - cantidad;
             stock = stock_restante; // Puse las variables al reves
