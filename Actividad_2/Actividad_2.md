@@ -40,3 +40,9 @@
 ![Calificaciones](./Imagenes/Calificaciones.png)
 
 ### Menú repetitivo: Implementa un menú con al menos cuatro opciones y un bucle que permita seleccionar repetidamente cualquier opción hasta que se elija "Salir".
+
+![Menu](./Imagenes/Menu.png)
+
+### Archivo compilado
+
+![Menu](./Imagenes/Menu2.png)
