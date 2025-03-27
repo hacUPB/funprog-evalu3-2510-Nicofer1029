@@ -5,7 +5,7 @@ int menu(void);
 
 int main(int argc, char const *argv[])
 {
-    float amperios, resistencia, voltaje;
+    float potencia_aparente, resistencia, voltaje;
 
     int opcion = menu();
     
@@ -14,10 +14,10 @@ int main(int argc, char const *argv[])
 
     case 1:
         printf("Ingresa el valor de la potencia aparente \n");
-        scanf("%f", &amperios);
+        scanf("%f", &potencia_aparente);
         printf("Ingresa el valor de la resistencia (R) en ohmios \n");
         scanf("%f", &resistencia);
-        voltaje = amperios*resistencia;
+        voltaje = potencia_aparente*resistencia;
         printf("La tension (V) es: %.2f" , voltaje);
         printf(" Voltios");
     break;
@@ -27,8 +27,8 @@ int main(int argc, char const *argv[])
         scanf("%f", &voltaje);
         printf("Ingresa el valor de la resistencia (R) en ohmios \n");
         scanf("%f", &resistencia);
-        amperios = voltaje/resistencia;
-        printf("La corriente (I) es: %.2f" , amperios);
+        potencia_aparente = voltaje/resistencia;
+        printf("La corriente (I) es: %.2f" , potencia_aparente);
         printf(" Amperios");
     break;
 
@@ -36,8 +36,8 @@ int main(int argc, char const *argv[])
         printf("Ingresa el valor del voltaje (V) en voltios \n");
         scanf("%f", &voltaje);
         printf("Ingresa el valor de la corriente (I) en amperios \n");
-        scanf("%f", &amperios);
-        resistencia = voltaje/amperios;
+        scanf("%f", &potencia_aparente);
+        resistencia = voltaje/potencia_aparente;
         printf("La corriente (I) es: %.2f" , resistencia);
         printf(" Ohmios");
     break;
