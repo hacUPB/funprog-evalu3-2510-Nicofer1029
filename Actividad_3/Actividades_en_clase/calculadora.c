@@ -6,34 +6,48 @@ int main() {
     int operador;
 
     do {
-        printf("Ingrese un numero: ");
-        scanf("%f", &num_1);
-        printf("Ingrese el otro numero: ");
-        scanf("%f", &num_2);
+
         printf("Las operaciones disponibles son:\n");
         printf("\n 1. Suma \n 2. Resta \n 3. Multiplicacion \n 4. Division \n 5. Salir \n");
         printf("\n Seleccione una opcion: ");
         scanf("%d", &operador);
 
+
         switch (operador) {
             case 1:
+            printf("Ingrese el primer numero: ");
+            scanf("%f", &num_1);
+            printf("Ingrese el segundo numero: ");
+            scanf("%f", &num_2);
                 resultado = num_1 + num_2;
-                printf("El resultado es: %.2f\n", resultado);
+                printf("\n El resultado es: %.2f\n \n", resultado);
                 break;
             case 2:
+            printf("Ingrese el primer numero: ");
+            scanf("%f", &num_1);
+            printf("Ingrese el segundo numero: ");
+            scanf("%f", &num_2);
                 resultado = num_1 - num_2;
-                printf("El resultado es: %.2f\n", resultado);
+                printf("\n El resultado es: %.2f\n \n", resultado);
                 break;
             case 3:
+            printf("Ingrese el primer numero: ");
+            scanf("%f", &num_1);
+            printf("Ingrese el segundo numero: ");
+            scanf("%f", &num_2);
                 resultado = num_1 * num_2;
-                printf("El resultado es: %.2f\n", resultado);
+                printf("\n El resultado es: %.2f\n \n", resultado);
                 break;
             case 4:
+            printf("Ingrese el primer numero: ");
+            scanf("%f", &num_1);
+            printf("Ingrese el segundo numero: ");
+            scanf("%f", &num_2);
                 if (num_2 != 0) {
                     resultado = num_1 / num_2;
-                    printf("El resultado es: %.2f\n", resultado);
+                    printf("\n El resultado es: %.2f\n \n", resultado);
                 } else {
-                    printf("Error: No se puede dividir por cero.\n");
+                    printf("\n Error: No se puede dividir por cero.\n \n");
                 }
                 break;
             case 5:
